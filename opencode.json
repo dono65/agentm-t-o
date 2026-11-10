@@ -1,0 +1,27 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // Modèle par défaut — à adapter selon vos providers
+  "model": "opencode/glm-5.3-flash-free",
+  "default_agent": "build",
+  "instructions": [
+    "AGENTS.md",
+    "docs/conventions.md"
+  ],
+  "permissions": {
+    "edit": "allow",
+    "bash": {
+      "git status": "allow",
+      "git diff": "allow",
+      "git log": "allow",
+      "*": "ask"
+    },
+    "webfetch": "allow"
+  },
+  "formatter": {
+    "prettier": {
+      "command": ["npx", "prettier", "--write"],
+      "environment": { "NODE_OPTIONS": "--max-old-space-size=8192" },
+      "extensions": [".js", ".ts", ".jsx", ".tsx", ".json", ".md", ".jsonc"]
+    }
+  }
+}
