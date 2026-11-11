@@ -1,0 +1,128 @@
+[
+  {
+    "code": "09",
+    "nom": "Ariège",
+    "lat": 42.945,
+    "lon": 1.509
+  },
+  {
+    "code": "11",
+    "nom": "Aude",
+    "lat": 43.122,
+    "lon": 2.367
+  },
+  {
+    "code": "16",
+    "nom": "Charente",
+    "lat": 45.726,
+    "lon": 0.202
+  },
+  {
+    "code": "17",
+    "nom": "Charente-Maritime",
+    "lat": 45.807,
+    "lon": -0.731
+  },
+  {
+    "code": "19",
+    "nom": "Corrèze",
+    "lat": 45.367,
+    "lon": 1.874
+  },
+  {
+    "code": "23",
+    "nom": "Creuse",
+    "lat": 46.071,
+    "lon": 1.989
+  },
+  {
+    "code": "24",
+    "nom": "Dordogne",
+    "lat": 45.122,
+    "lon": 0.756
+  },
+  {
+    "code": "31",
+    "nom": "Haute-Garonne",
+    "lat": 43.341,
+    "lon": 1.172
+  },
+  {
+    "code": "32",
+    "nom": "Gers",
+    "lat": 43.699,
+    "lon": 0.445
+  },
+  {
+    "code": "33",
+    "nom": "Gironde",
+    "lat": 44.808,
+    "lon": -0.478
+  },
+  {
+    "code": "40",
+    "nom": "Landes",
+    "lat": 43.901,
+    "lon": -0.596
+  },
+  {
+    "code": "46",
+    "nom": "Lot",
+    "lat": 44.606,
+    "lon": 1.592
+  },
+  {
+    "code": "47",
+    "nom": "Lot-et-Garonne",
+    "lat": 44.388,
+    "lon": 0.491
+  },
+  {
+    "code": "64",
+    "nom": "Pyrénées-Atlantiques",
+    "lat": 43.259,
+    "lon": -0.79
+  },
+  {
+    "code": "65",
+    "nom": "Hautes-Pyrénées",
+    "lat": 43.147,
+    "lon": 0.157
+  },
+  {
+    "code": "66",
+    "nom": "Pyrénées-Orientales",
+    "lat": 42.574,
+    "lon": 2.473
+  },
+  {
+    "code": "79",
+    "nom": "Deux-Sèvres",
+    "lat": 46.539,
+    "lon": -0.308
+  },
+  {
+    "code": "81",
+    "nom": "Tarn",
+    "lat": 43.8,
+    "lon": 2.144
+  },
+  {
+    "code": "82",
+    "nom": "Tarn-et-Garonne",
+    "lat": 44.108,
+    "lon": 1.326
+  },
+  {
+    "code": "86",
+    "nom": "Vienne",
+    "lat": 46.578,
+    "lon": 0.411
+  },
+  {
+    "code": "87",
+    "nom": "Haute-Vienne",
+    "lat": 45.881,
+    "lon": 1.222
+  }
+]
