@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Météo Sud-Ouest — Rapport météo cartographié</title>
+  <meta name="description" content="Rapport météo visuel du Sud-Ouest de la France : températures, précipitations et rafales de vent sur une carte interactive, mis à jour par la commande /update-rapport.">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="en-tete">
+    <div class="marque">
+      <h1>Météo <span>Sud-Ouest</span></h1>
+      <p class="sous-titre">Rapport météo cartographié — 21 départements · Nouvelle-Aquitaine &amp; Occitanie ouest</p>
+    </div>
+    <div class="etiquettes">
+      <span class="etiquette" id="badge-maj" title="Date de génération du rapport">rapport en chargement…</span>
+      <span class="etiquette periode-choisie" id="badge-periode">—</span>
+    </div>
+    <nav class="selecteur-periodes" id="periodes" aria-label="Choix de la période"></nav>
+  </header>
+
+  <div class="avertissement cache" id="avertissement" role="alert"></div>
+
+  <div class="corps">
+    <aside class="panneau" id="panneau">
+      <section class="bloc">
+        <h2>Couches de la carte</h2>
+        <p class="aide">Activez ou désactivez chaque donnée. Elles se combinent : fond coloré (température), hachures (précipitations), contour épais (rafales).</p>
+        <div class="bascules" id="bascules"></div>
+      </section>
+
+      <section class="bloc">
+        <h2>Légende</h2>
+        <div class="legende" id="legende"></div>
+      </section>
+
+      <section class="bloc cache" id="bloc-alertes">
+        <h2>Alertes</h2>
+        <ul class="alertes" id="alertes"></ul>
+      </section>
+
+      <section class="bloc">
+        <h2>Synthèse</h2>
+        <div class="texte" id="synthese"></div>
+      </section>
+
+      <section class="bloc">
+        <h2>Évolutions possibles</h2>
+        <div class="texte" id="evolutions"></div>
+      </section>
+
+      <section class="bloc">
+        <h2>Conseils</h2>
+        <div class="texte" id="conseils"></div>
+      </section>
+
+      <section class="bloc">
+        <button class="bouton-plein" id="btn-rapport-complet" type="button">Ouvrir le rapport complet</button>
+      </section>
+    </aside>
+
+    <main class="zone-carte">
+      <div id="carte" aria-label="Carte météo du Sud-Ouest"></div>
+      <div class="chargement" id="chargement"><div class="rotor"></div><p>Chargement du rapport…</p></div>
+    </main>
+  </div>
+
+  <div class="overlay cache" id="overlay-rapport" role="dialog" aria-modal="true" aria-label="Rapport complet">
+    <div class="overlay-interieur">
+      <header class="overlay-entete">
+        <h2>Rapport météo complet</h2>
+        <div class="overlay-actions">
+          <a class="lien-historique" href="data/historique-rapports.md" target="_blank" rel="noopener">Historique des éditions</a>
+          <button class="bouton-fermer" id="btn-fermer-rapport" type="button">Fermer ✕</button>
+        </div>
+      </header>
+      <div class="overlay-texte texte" id="rapport-complet-texte"></div>
+    </div>
+  </div>
+
+  <footer class="pied">
+    <span>Contours : Etalab / france-geojson · Fond de carte : © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> &amp; CARTO · Données modèles : Météociel (AROME Météo-France, WRF-NMM, CEP/ECMWF, ICON-EU) · Calibrage : Open-Meteo</span>
+    <span>Mise à jour automatique via la commande <code>/update-rapport</code> d'OpenCode.</span>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
