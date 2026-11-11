@@ -1,0 +1,217 @@
+{
+  "schema": 1,
+  "meta": {
+    "genere_le": "2026-11-11T18:10:00+01:00",
+    "generateur": "/update-rapport",
+    "titre": "Rapport météo — Sud-Ouest de la France",
+    "perimetre": "21 départements du Sud-Ouest (Nouvelle-Aquitaine + Occitanie ouest)",
+    "validite": {
+      "de": "2026-11-11",
+      "a": "2026-11-13"
+    },
+    "sources": [
+      {
+        "nom": "AROME HD 1,3 km (Météo-France, zoom Sud-Ouest — Météociel)",
+        "url": "https://www.meteociel.fr/modeles/arome.php?ech=3&mode=101&map=3"
+      },
+      {
+        "nom": "WRF-NMM 5 km (zoom Sud-Ouest — Météociel)",
+        "url": "https://www.meteociel.fr/modeles/wrfnmm.php?ech=3&mode=1&map=3"
+      },
+      {
+        "nom": "CEP/ECMWF 9 km (zoom Sud-Ouest — Météociel)",
+        "url": "https://www.meteociel.fr/modeles/ecmwf_ctrl.php?ech=6&mode=2&carte=13&type=&"
+      },
+      {
+        "nom": "ICON-EU 7 km (zoom Sud-Ouest — Météociel)",
+        "url": "https://www.meteociel.fr/modeles/icon-eu.php?ech=3&mode=1&map=503"
+      },
+      {
+        "nom": "Calibrage chiffré par département — Open-Meteo (AROME-France HD pour J0, choix optimal pour J1/J2)",
+        "url": "https://open-meteo.com/"
+      },
+      {
+        "nom": "Contours des départements — Etalab / france-geojson",
+        "url": "https://github.com/gregoiredavid/france-geojson"
+      }
+    ],
+    "methodologie": "Interprétation des quatre cartes modèles Météociel (situation synoptique, répartition spatiale, évolutions) calibrée par des valeurs chiffrées Open-Meteo : AROME-France HD de Météo-France pour J0, choix optimal (ICON/GFS) pour J1 et J2. Chaque valeur est représentative du point de référence du département ; la répartition fine à l'intérieur d'un département est une estimation. Les cartes modèles restant des images, aucun chiffre direct n'en est extrait."
+  },
+  "periodes": [
+    {
+      "id": "j0",
+      "date": "2026-11-11",
+      "label": "Mercredi 11 novembre",
+      "court": "Aujourd'hui"
+    },
+    {
+      "id": "j1",
+      "date": "2026-11-12",
+      "label": "Jeudi 12 novembre",
+      "court": "Demain"
+    },
+    {
+      "id": "j2",
+      "date": "2026-11-13",
+      "label": "Vendredi 13 novembre",
+      "court": "Après-demain"
+    }
+  ],
+  "villes": [
+    { "nom": "Poitiers", "dept": "86", "lat": 46.580, "lon": 0.340 },
+    { "nom": "Niort", "dept": "79", "lat": 46.324, "lon": -0.463 },
+    { "nom": "La Rochelle", "dept": "17", "lat": 46.159, "lon": -1.152 },
+    { "nom": "Rochefort", "dept": "17", "lat": 45.941, "lon": -0.964 },
+    { "nom": "Guéret", "dept": "23", "lat": 46.170, "lon": 1.871 },
+    { "nom": "Limoges", "dept": "87", "lat": 45.833, "lon": 1.263 },
+    { "nom": "Angoulême", "dept": "16", "lat": 45.649, "lon": 0.156 },
+    { "nom": "Brive-la-Gaillarde", "dept": "19", "lat": 45.159, "lon": 1.533 },
+    { "nom": "Périgueux", "dept": "24", "lat": 45.184, "lon": 0.722 },
+    { "nom": "Bordeaux", "dept": "33", "lat": 44.838, "lon": -0.579 },
+    { "nom": "Arcachon", "dept": "33", "lat": 44.665, "lon": -1.105 },
+    { "nom": "Agen", "dept": "47", "lat": 44.202, "lon": 0.621 },
+    { "nom": "Cahors", "dept": "46", "lat": 44.449, "lon": 1.437 },
+    { "nom": "Montauban", "dept": "82", "lat": 44.018, "lon": 1.355 },
+    { "nom": "Mont-de-Marsan", "dept": "40", "lat": 43.891, "lon": -0.499 },
+    { "nom": "Albi", "dept": "81", "lat": 43.930, "lon": 2.148 },
+    { "nom": "Dax", "dept": "40", "lat": 43.707, "lon": -0.980 },
+    { "nom": "Auch", "dept": "32", "lat": 43.646, "lon": 0.586 },
+    { "nom": "Toulouse", "dept": "31", "lat": 43.605, "lon": 1.444 },
+    { "nom": "Tarbes", "dept": "65", "lat": 43.232, "lon": 0.071 },
+    { "nom": "Carcassonne", "dept": "11", "lat": 43.213, "lon": 2.349 },
+    { "nom": "Narbonne", "dept": "11", "lat": 43.185, "lon": 3.004 },
+    { "nom": "Pau", "dept": "64", "lat": 43.296, "lon": -0.370 },
+    { "nom": "Bayonne", "dept": "64", "lat": 43.493, "lon": -1.475 },
+    { "nom": "Foix", "dept": "09", "lat": 42.961, "lon": 1.607 },
+    { "nom": "Perpignan", "dept": "66", "lat": 42.688, "lon": 2.894 }
+  ],
+  "valeurs": {
+    "j0": {
+      "09": { "temperature_max": 16, "temperature_min": 11, "precipitation": 0.0, "rafale": 29 },
+      "11": { "temperature_max": 20, "temperature_min": 15, "precipitation": 0.0, "rafale": 44 },
+      "16": { "temperature_max": 19, "temperature_min": 14, "precipitation": 1.6, "rafale": 33 },
+      "17": { "temperature_max": 18, "temperature_min": 12, "precipitation": 0.0, "rafale": 30 },
+      "19": { "temperature_max": 16, "temperature_min": 12, "precipitation": 7.5, "rafale": 21 },
+      "23": { "temperature_max": 16, "temperature_min": 9, "precipitation": 8.1, "rafale": 39 },
+      "24": { "temperature_max": 18, "temperature_min": 14, "precipitation": 1.3, "rafale": 36 },
+      "31": { "temperature_max": 21, "temperature_min": 12, "precipitation": 0.0, "rafale": 35 },
+      "32": { "temperature_max": 20, "temperature_min": 13, "precipitation": 0.7, "rafale": 43 },
+      "33": { "temperature_max": 20, "temperature_min": 13, "precipitation": 0.5, "rafale": 27 },
+      "40": { "temperature_max": 20, "temperature_min": 13, "precipitation": 1.2, "rafale": 32 },
+      "46": { "temperature_max": 16, "temperature_min": 13, "precipitation": 1.2, "rafale": 30 },
+      "47": { "temperature_max": 21, "temperature_min": 14, "precipitation": 0.1, "rafale": 23 },
+      "64": { "temperature_max": 21, "temperature_min": 15, "precipitation": 4.4, "rafale": 35 },
+      "65": { "temperature_max": 19, "temperature_min": 12, "precipitation": 0.1, "rafale": 24 },
+      "66": { "temperature_max": 17, "temperature_min": 12, "precipitation": 0.0, "rafale": 48 },
+      "79": { "temperature_max": 17, "temperature_min": 12, "precipitation": 7.6, "rafale": 26 },
+      "81": { "temperature_max": 20, "temperature_min": 12, "precipitation": 0.0, "rafale": 26 },
+      "82": { "temperature_max": 19, "temperature_min": 14, "precipitation": 0.8, "rafale": 25 },
+      "86": { "temperature_max": 18, "temperature_min": 13, "precipitation": 7.9, "rafale": 24 },
+      "87": { "temperature_max": 16, "temperature_min": 12, "precipitation": 6.2, "rafale": 28 }
+    },
+    "j1": {
+      "09": { "temperature_max": 15, "temperature_min": 10, "precipitation": 0.3, "rafale": 53 },
+      "11": { "temperature_max": 19, "temperature_min": 15, "precipitation": 1.4, "rafale": 49 },
+      "16": { "temperature_max": 15, "temperature_min": 8, "precipitation": 28.5, "rafale": 40 },
+      "17": { "temperature_max": 15, "temperature_min": 8, "precipitation": 14.9, "rafale": 38 },
+      "19": { "temperature_max": 14, "temperature_min": 10, "precipitation": 14.8, "rafale": 31 },
+      "23": { "temperature_max": 12, "temperature_min": 6, "precipitation": 31.9, "rafale": 44 },
+      "24": { "temperature_max": 15, "temperature_min": 9, "precipitation": 9.4, "rafale": 39 },
+      "31": { "temperature_max": 18, "temperature_min": 13, "precipitation": 3.0, "rafale": 72 },
+      "32": { "temperature_max": 18, "temperature_min": 12, "precipitation": 11.0, "rafale": 59 },
+      "33": { "temperature_max": 15, "temperature_min": 10, "precipitation": 14.2, "rafale": 31 },
+      "40": { "temperature_max": 20, "temperature_min": 15, "precipitation": 10.1, "rafale": 59 },
+      "46": { "temperature_max": 15, "temperature_min": 11, "precipitation": 15.6, "rafale": 36 },
+      "47": { "temperature_max": 17, "temperature_min": 12, "precipitation": 10.6, "rafale": 44 },
+      "64": { "temperature_max": 20, "temperature_min": 13, "precipitation": 7.8, "rafale": 47 },
+      "65": { "temperature_max": 19, "temperature_min": 11, "precipitation": 1.1, "rafale": 46 },
+      "66": { "temperature_max": 18, "temperature_min": 11, "precipitation": 0.2, "rafale": 51 },
+      "79": { "temperature_max": 14, "temperature_min": 7, "precipitation": 5.8, "rafale": 54 },
+      "81": { "temperature_max": 18, "temperature_min": 13, "precipitation": 5.9, "rafale": 44 },
+      "82": { "temperature_max": 16, "temperature_min": 12, "precipitation": 7.9, "rafale": 43 },
+      "86": { "temperature_max": 13, "temperature_min": 8, "precipitation": 7.6, "rafale": 40 },
+      "87": { "temperature_max": 13, "temperature_min": 7, "precipitation": 21.8, "rafale": 44 }
+    },
+    "j2": {
+      "09": { "temperature_max": 10, "temperature_min": 7, "precipitation": 7.9, "rafale": 68 },
+      "11": { "temperature_max": 15, "temperature_min": 9, "precipitation": 6.7, "rafale": 66 },
+      "16": { "temperature_max": 9, "temperature_min": 3, "precipitation": 0.3, "rafale": 39 },
+      "17": { "temperature_max": 10, "temperature_min": 4, "precipitation": 0.0, "rafale": 40 },
+      "19": { "temperature_max": 10, "temperature_min": 3, "precipitation": 2.7, "rafale": 44 },
+      "23": { "temperature_max": 6, "temperature_min": 1, "precipitation": 0.3, "rafale": 42 },
+      "24": { "temperature_max": 10, "temperature_min": 4, "precipitation": 0.7, "rafale": 38 },
+      "31": { "temperature_max": 14, "temperature_min": 8, "precipitation": 0.8, "rafale": 50 },
+      "32": { "temperature_max": 12, "temperature_min": 7, "precipitation": 1.5, "rafale": 44 },
+      "33": { "temperature_max": 10, "temperature_min": 4, "precipitation": 0.6, "rafale": 29 },
+      "40": { "temperature_max": 15, "temperature_min": 8, "precipitation": 4.4, "rafale": 51 },
+      "46": { "temperature_max": 11, "temperature_min": 5, "precipitation": 1.5, "rafale": 50 },
+      "47": { "temperature_max": 12, "temperature_min": 5, "precipitation": 1.2, "rafale": 44 },
+      "64": { "temperature_max": 14, "temperature_min": 11, "precipitation": 2.7, "rafale": 63 },
+      "65": { "temperature_max": 13, "temperature_min": 10, "precipitation": 3.6, "rafale": 65 },
+      "66": { "temperature_max": 15, "temperature_min": 8, "precipitation": 0.0, "rafale": 31 },
+      "79": { "temperature_max": 9, "temperature_min": 3, "precipitation": 0.0, "rafale": 53 },
+      "81": { "temperature_max": 13, "temperature_min": 6, "precipitation": 8.3, "rafale": 52 },
+      "82": { "temperature_max": 12, "temperature_min": 6, "precipitation": 3.7, "rafale": 47 },
+      "86": { "temperature_max": 10, "temperature_min": 3, "precipitation": 0.0, "rafale": 43 },
+      "87": { "temperature_max": 7, "temperature_min": 2, "precipitation": 0.2, "rafale": 45 }
+    }
+  },
+  "groupes": [
+    {
+      "id": "littoral",
+      "nom": "Littoral atlantique",
+      "depts": ["17", "33", "40", "64"],
+      "commentaire": "Charente-Maritime, Gironde, Landes, côte basque. Les Pyrénées-Atlantiques appartiennent aussi au groupe montagne."
+    },
+    {
+      "id": "interieur",
+      "nom": "Intérieur aquitain",
+      "depts": ["16", "24", "47", "32"],
+      "commentaire": "Charente, Périgord, Agenais, Gers."
+    },
+    {
+      "id": "nord-est",
+      "nom": "Plateaux du Nord-Est",
+      "depts": ["19", "23", "79", "86", "87"],
+      "commentaire": "Corrèze, Creuse, Deux-Sèvres, Vienne, Haute-Vienne. Premières gelées typiques dès que le flux se réoriente au nord."
+    },
+    {
+      "id": "toulousain",
+      "nom": "Bassin toulousain et Quercy",
+      "depts": ["31", "82", "46"],
+      "commentaire": "Haute-Garonne, Tarn-et-Garonne, Lot. Couloir privilégié des vents d'ouest (autan)."
+    },
+    {
+      "id": "tarn",
+      "nom": "Albigeois",
+      "depts": ["81"],
+      "commentaire": "Tarn : ambiance de piémont, averses résiduelles fréquentes derrière les perturbations."
+    },
+    {
+      "id": "pyrenees",
+      "nom": "Chaîne et piémont pyrénéens",
+      "depts": ["64", "65", "09"],
+      "commentaire": "Pays basque, Béarn, Bigorre, Ariège. Rafales potentiellement les plus fortes du domaine par flux d'ouest à nord-ouest."
+    },
+    {
+      "id": "mediterranee",
+      "nom": "Versant méditerranéen",
+      "depts": ["11", "66"],
+      "commentaire": "Aude et Roussillon. Vent de cers/tramontane, ensoleillement généreux dès que la perturbation passe au nord."
+    }
+  ],
+  "synthese": "**Mercredi 11** : douceur remarquable pour la mi-novembre (maximales 16 à 22 °C, soit 4 à 7 °C au-dessus des normales), temps très majoritairement sec ; seuls les plateaux du Nord-Est (Creuse, Deux-Sèvres, Vienne, Haute-Vienne) et la Corrèze voient quelques pluies faibles (6 à 8 mm). Vent modéré, sensible en Aude et Roussillon sous cers (44 à 48 km/h). **Jeudi 12** : une perturbation pluvieuse traverse la moitié nord — Charente jusqu'à 28 mm, Creuse 32 mm, Haute-Vienne 22 mm, 9 à 16 mm de Gironde au Lot — tandis que le sud reste protégé. Le vent d'ouest à sud-ouest se renforce nettement dans le couloir toulousain (rafales jusqu'à 72 km/h en Haute-Garonne, 59 km/h dans le Gers et les Landes). **Vendredi 13** : derrière la perturbation, la fraîcheur s'installe (maximales 6 à 15 °C, minimales 1 à 3 °C sur les plateaux du Nord-Est, gelées possibles à l'aube) avec des rafales de nord-ouest marquées sur les Pyrénées et le versant méditerranéen (51 à 68 km/h) et des averses résiduelles (Tarn 8 mm, Ariège 8 mm, Aude 7 mm).",
+  "evolutions": "La dégradation de jeudi est reproduite de façon cohérente par les quatre modèles (AROME, WRF, ECMWF, ICON-EU) : la confiance est bonne sur la pluie de la moitié nord et sur le vent du couloir garonnais. Au-delà de J2, l'ECMWF (cartes jusqu'à +144 h) suggère la persistance d'un flux dépressionnaire de nord-ouest et un afflux d'air nettement plus froid d'ici le week-end, avec un risque de giboulées sur les reliefs. La trajectoire exacte de la goutte froide reste incertaine : surveiller les nouveaux runs (12 h et 18 h) qui préciseront ou infirmeront ce scénario. Tendance probable : diminution des températures de 3 à 6 °C par rapport à mercredi, vent de nord-ouest soutenu sur les Pyrénées et la méditerranée.",
+  "conseils": "Activez la couche **Température** pour repérer les contrastes doux/frais (le fond coloré des départements), la couche **Précipitations** pour suivre l'arrivée de la pluie de jeudi (hachures bleues superposées aux couleurs de température, densité proportionnelle au cumul) et la couche **Rafales** pour les zones ventées (contour épais coloré autour des départements). Utilisez les boutons **Aujourd'hui / Demain / Après-demain** pour projeter l'évolution dans le temps. Survolez un département pour les valeurs détaillées ; les pastilles des grandes villes affichent les valeurs des couches actives. Les valeurs étant départementales, tenez compte des écarts d'altitude (plaine vs relief) dans les départements montagneux.",
+  "alertes": [
+    "Jeudi 12 : fortes pluies possibles en Charente (cumul jusqu'à 28 mm) et sur les plateaux du Nord-Est (Creuse 32 mm, Haute-Vienne 22 mm).",
+    "Jeudi 12 : rafales jusqu'à 72 km/h dans le couloir toulousain (Haute-Garonne), 59 km/h dans le Gers et les Landes.",
+    "Vendredi 13 : rafales de 60 à 70 km/h sur les Pyrénées et l'Aude (68 km/h en Ariège, 66 km/h dans l'Aude).",
+    "Vendredi 13 : premières gelées probables à l'aube sur les plateaux du Nord-Est (Creuse et Haute-Vienne, minimales 1 à 2 °C)."
+  ],
+  "confiance": {
+    "j0": "élevée",
+    "j1": "bonne",
+    "j2": "modérée"
+  }
+}
