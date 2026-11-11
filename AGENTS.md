@@ -5,8 +5,12 @@ Instructions pour les agents OpenCode travaillant dans ce dépôt.
 ## Contexte du projet
 
 - **Nom** : agentm-t-o
-- **Description** : (à compléter — décrivez ici l'objectif du projet)
-- **Stack** : (à compléter — langages, frameworks, outils de build)
+- **Description** : application web « Météo Sud-Ouest » affichant sur une
+  carte le rapport météo (températures, précipitations, rafales) du Sud-Ouest
+  de la France, alimenté par la commande OpenCode `/update-rapport` (sources :
+  cartes modèles Météociel + calibrage Open-Meteo).
+- **Stack** : HTML/CSS/JavaScript vanilla (site statique), Leaflet 1.9 (CDN),
+  Node.js pour les outils de préparation et les validations.
 
 ## Structure du dépôt
 
@@ -16,9 +20,14 @@ Instructions pour les agents OpenCode travaillant dans ce dépôt.
 ├── opencode.json      # Configuration OpenCode du projet
 ├── .opencode/         # Agents, commandes et skills personnalisés
 │   ├── agent/         # Agents définis en Markdown (frontmatter)
-│   ├── command/       # Commandes slash personnalisées
+│   ├── commands/      # Commandes slash personnalisées (ex. /update-rapport)
 │   └── skill/         # Skills (répertoires avec SKILL.md)
-└── docs/              # Documentation du projet
+├── src/               # Application web « Météo Sud-Ouest »
+│   ├── index.html     # Page principale
+│   ├── css/, js/      # Style et logique (Leaflet, couches, légende)
+│   ├── data/          # Rapport (rapport.json/md, historique) et géographie
+│   └── tools/         # Outils Node (préparation géographique)
+└── docs/              # Documentation du projet (ex. app-meteo.md)
 ```
 
 ## Règles impératives
